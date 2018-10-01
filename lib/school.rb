@@ -22,11 +22,10 @@ class School
   end
 
   def sort
-      roster_copy = {}
+    #roster_copy = {}
       @roster.each do |key,students|
-        roster_copy[key]=students.sort
+        @roster[key]=students.sort
       end
-      roster_copy
   end
 
 end
