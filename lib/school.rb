@@ -26,7 +26,7 @@ class School
       @roster.each do |key,students|
         roster_copy[key]=students.sort
       end
-        
+      roster_copy
   end
 
 end
