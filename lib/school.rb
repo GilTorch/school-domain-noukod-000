@@ -22,7 +22,7 @@ class School
   end
 
   def sort
-      @roster.each do |key,students|
+      @roster.collect do |key,students|
         students.sort
       end
   end
