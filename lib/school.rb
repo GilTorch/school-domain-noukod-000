@@ -22,9 +22,9 @@ class School
   end
 
   def sort
-      sorted_by_key=@roster.sort {|element,element1| element[0] <=> element1[0]}.to_h
-      sorted_by_array=sorted_by_key.sort {|element,element1| element[1] <=> element1[1]}.to_h
-      return sorted_by_array
+      @roster.each do |key,students|
+        students = students.sort
+      end
   end
 
 end
